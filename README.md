@@ -22,11 +22,15 @@ Mushroom Edibility Predictor is an end-to-end Machine Learning web application b
 * **Best Model Finder:** A specific feature to run all models simultaneously and determine the winner based on accuracy.
 * **Data Overview:** Option to view the raw dataframe.
 
-##Project Structure
+## Dataset
+The dataset includes descriptions of hypothetical samples corresponding to 23 species of gilled mushrooms in the Agaricus and Lepiota Family. Each species is identified as definitely edible, definitely poisonous, or of unknown edibility and not recommended. This latter class was combined with the poisonous one.
+
+## 📂 Project Structure
+
+```text
 ├── app.py               # The main Streamlit application code
 ├── mushrooms.csv        # The dataset file
 ├── requirements.txt     # List of python dependencies
 └── README.md            # Project documentation
 
-##Dataset
-The dataset includes descriptions of hypothetical samples corresponding to 23 species of gilled mushrooms in the Agaricus and Lepiota Family. Each species is identified as definitely edible, definitely poisonous, or of unknown edibility and not recommended. This latter class was combined with the poisonous one.
+
