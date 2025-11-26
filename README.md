@@ -1,80 +1,32 @@
-# MUSHROOM_ANALYSIS
-Mushroom Classifier Web App 🍄
+# 🍄 Mushroom Edibility Predictor
 
-This is an interactive web application built with Streamlit that uses machine learning to classify mushrooms as edible or poisonous.
+A Machine Learning Web Application built with **Streamlit** that predicts whether a mushroom is **Edible** or **Poisonous** based on its physical characteristics.
 
-The app allows you to choose between three different classification models, tune their hyperparameters in real-time, and instantly see the results and performance metrics.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.0%2B-red)
+![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange)
 
-Core Features
+## 📖 Overview
+Mushroom Edibility Predictor is an end-to-end Machine Learning web application built using Python and Streamlit. It solves a binary classification problem to determine if a mushroom is Edible or Poisonous based on physical traits. The app allows users to interactively train and compare three algorithms—Support Vector Machine (SVM), Logistic Regression, and Random Forest—while visualizing real-time metrics like Confusion Matrices and ROC Curves to identify the best-performing model.
 
-Model Selection: Instantly switch between three popular classification models:
+## ✨ Features
+* **Interactive Sidebar:** Adjust hyperparameters (C, Kernel, Max Depth, etc.) in real-time.
+* **Multiple Classifiers:**
+    * Support Vector Machine (SVM)
+    * Logistic Regression
+    * Random Forest
+* **Visual Metrics:**
+    * Confusion Matrix
+    * ROC Curve
+    * Precision-Recall Curve
+* **Best Model Finder:** A specific feature to run all models simultaneously and determine the winner based on accuracy.
+* **Data Overview:** Option to view the raw dataframe.
 
-Support Vector Machine (SVM)
+##Project Structure
+├── app.py               # The main Streamlit application code
+├── mushrooms.csv        # The dataset file
+├── requirements.txt     # List of python dependencies
+└── README.md            # Project documentation
 
-Logistic Regression
-
-Random Forest
-
-Hyperparameter Tuning: Use interactive sliders, radio buttons, and number inputs in the sidebar to tune the core hyperparameters for each model (e.g., C for SVM, n_estimators for Random Forest).
-
-Performance Metrics: After classifying, the app immediately reports key metrics:
-
-Accuracy
-
-Precision
-
-Recall
-
-Interactive Visualizations: Select which performance plots you want to see, generated in real-time:
-
-Confusion Matrix
-
-ROC Curve
-
-Precision-Recall Curve
-
-Data Inspection: Includes a checkbox to show the raw, pre-processed mushrooms.csv dataset.
-
-Technology Stack
-
-Web Framework: Streamlit
-
-Data Manipulation: Pandas, NumPy
-
-Machine Learning: Scikit-learn (sklearn)
-
-Data Visualization: Matplotlib (via sklearn.metrics displays)
-
-How to Use
-
-Get the Data:
-
-You must have the mushrooms.csv file in the same directory as the app.py script.
-
-Install Dependencies:
-
-Create and activate a virtual environment.
-
-Install the required libraries:
-
-pip install -r requirements.txt
-
-
-Run the App:
-
-Open your terminal in the project folder and run:
-
-streamlit run app.py
-
-
-Interact with the App:
-
-A web browser window will open automatically.
-
-Use the sidebar to choose a classifier.
-
-Adjust the hyperparameters for that model.
-
-Select the metrics you'd like to see plotted.
-
-Click the "Classify" button to train the model, get predictions, and see the results.
+##Dataset
+The dataset includes descriptions of hypothetical samples corresponding to 23 species of gilled mushrooms in the Agaricus and Lepiota Family. Each species is identified as definitely edible, definitely poisonous, or of unknown edibility and not recommended. This latter class was combined with the poisonous one.
