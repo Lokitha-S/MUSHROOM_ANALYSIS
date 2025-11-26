@@ -1,3 +1,4 @@
+https://github.com/user-attachments/assets/45327baa-b9d8-4594-beb6-8a8c1b53c931
 # 🍄 Mushroom Edibility Predictor
 
 A Machine Learning Web Application built with **Streamlit** that predicts whether a mushroom is **Edible** or **Poisonous** based on its physical characteristics.
@@ -16,6 +17,9 @@ Mushroom Edibility Predictor is an end-to-end Machine Learning web application b
     * Logistic Regression
     * Random Forest
 * **Visual Metrics:**
+
+
+
     * Confusion Matrix
     * ROC Curve
     * Precision-Recall Curve
